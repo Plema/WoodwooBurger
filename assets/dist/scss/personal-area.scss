@@ -1,0 +1,571 @@
+h4 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'CartographSansCF-Bold';
+    line-height: 35px;
+}
+
+.form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 418px;
+
+    .btn {
+        font-size: 18px;
+        min-width: 234px;
+        min-height: 40px;
+        border-radius: 0px;
+        font-family: 'CartographSansCF-Bold';
+        margin-top: 7px;
+    }
+
+    .form-column {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    input {
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        max-width: 416px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        width: 100%;
+        font-family: 'CartographSansCF-Medium', sans-serif;
+        font-size: 16px;
+
+        &::placeholder {
+            color: var(--Color-black);
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'CartographSansCF-Medium', sans-serif;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        width: 100%;
+
+        button {
+            padding-left: 0px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'CartographSansCF-Bold';
+            margin-bottom: 16px;
+            -webkit-transition: all 0.6s;
+            -moz-transition: all 0.6s;
+            -ms-transition: all 0.6s;
+            -o-transition: all 0.6s;
+            transition: all 0.6s;
+            min-width: 156px;
+            margin-top: 0;
+        }
+    }
+}
+
+.address {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    margin-top: 45px;
+    padding-top: 45px;
+
+    .form-action {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 18px;
+        min-width: 234px;
+        min-height: 40px;
+        border-radius: 0px;
+        font-family: 'CartographSansCF-Bold';
+        margin-top: 7px;
+    }
+
+    .icons {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    .icon-edit,
+    .icon-delete {
+        background-color: inherit;
+        border: none;
+        width: 18px;
+        height: 18px;
+        font-size: 18px;
+        position: relative;
+        color: var(--Color-black);
+        margin: 0 7px;
+
+        &:hover {
+            color: var(--Color-yellow);
+        }
+    }
+
+    .form {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        p {
+            margin: 0;
+            max-width: 261px;
+            padding: 0;
+            font-size: 16px;
+            display: none;
+
+            &.active {
+                display: inline-block;
+            }
+        }
+    }
+
+    .form-column {
+        display: none;
+
+        &.active {
+            display: flex;
+
+            button {
+                border: none;
+                background-color: inherit;
+                font-size: 14px;
+                font-family: 'CartographSansCF-Bold';
+
+                &:hover {
+                    color: var(--Color-yellow);
+                }
+            }
+        }
+    }
+}
+
+.history {
+
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'CartographSansCF-Bold';
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.5);
+            font-family: 'CartographSansCF-Medium';
+        }
+    }
+
+    ul {
+        margin-bottom: 50px;
+
+        li {
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'CartographSansCF-Medium';
+                color: rgba(0, 0, 0, 0.5);
+                display: block;
+                width: 100%;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 2px;
+                    width: 46%;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            .item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px 0;
+
+                .order {
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: 'CartographSansCF-Medium';
+                    width: 20%;
+                    padding-right: 5px;
+                }
+
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 55%;
+                    padding-right: 10px;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: 'CartographSansCF-Medium';
+                        color: var(--Color-black);
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    a:nth-of-type(2) {
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: 'CartographSansCF-Medium';
+                    }
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #cccccc;
+
+                        span {
+                            margin: 0;
+                            padding: 0;
+                            color: #000;
+                        }
+                    }
+                }
+
+                .size {
+                    width: 11%;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'CartographSansCF-Medium';
+                    color: var(--Color-yellow);
+                    min-width: 35px;
+                    padding-left: 10px;
+                }
+
+                .price {
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: 'CartographSansCF-Medium';
+                    width: 24%;
+                    padding-right: 7px;
+                }
+
+                .action {
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+
+                    p {
+                        text-align: center;
+                        margin: 31px 0;
+                        min-height: 33px;
+                        min-width: 125px;
+                    }
+                }
+
+                .btn {
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    min-height: 34px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .history {
+        padding-top: 34px;
+
+        h4 {
+            font-size: 38px;
+            font-weight: 700;
+            font-family: 'CartographSansCF-Bold';
+            line-height: 40px;
+        }
+
+        ul {
+            li {
+                .title::after {
+                    width: 65%;
+                }
+
+                .item {
+                    align-items: baseline;
+                    flex-wrap: nowrap;
+
+                    .order {
+                        font-size: 12px;
+                        width: 12%;
+                    }
+
+                    .name {
+                        display: flex;
+                        flex-direction: column;
+                        width: 44%;
+
+                        a {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    .size {
+                        width: 8%;
+                        min-width: 36px;
+                        margin-left: 10px;
+                    }
+
+                    .price {
+                        width: 14%;
+                    }
+
+                    .action {
+                        width: auto;
+                    }
+
+                    .btn {
+                        margin: 0;
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form .form-group {
+        flex-wrap: nowrap;
+
+        button {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-data {
+        margin-top: 170px;
+    }
+
+    .form-data {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form {
+        width: 50%;
+        margin: 0;
+
+        .form-action {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+
+    .address {
+        margin-top: 61px;
+        padding-top: 58px;
+
+        .form {
+            width: 100%;
+        }
+
+        .form-action {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 6.5%;
+
+        h4 {
+            font-size: 34px;
+        }
+    }
+
+    .history {
+        padding-top: 0;
+        width: 60%;
+        padding-left: 20px;
+    }
+
+    .address {
+        width: 100%;
+        margin-top: 60px;
+        padding-top: 30px;
+
+        .form {
+            margin-bottom: 33px;
+        }
+    }
+
+    .form-data {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-right: 22px;
+        width: 40%;
+
+        .form {
+            width: 100%;
+            margin: 0;
+        }
+
+        .heading {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section-data {
+        margin-top: 190px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section-data {
+        margin-top: 190px;
+    }
+
+
+    .section {
+        justify-content: space-between;
+
+        h4 {
+            font-size: 38px;
+            margin-top: 66px;
+            margin-bottom: 42px;
+        }
+    }
+
+    .form-data {
+        width: 35%;
+    }
+
+    .history {
+        padding-top: 0;
+        width: 59%;
+        padding-left: 16px;
+
+        .heading {
+            align-items: center;
+
+            h4 {
+                margin-bottom: 7px;
+            }
+
+            a {
+                display: inline-block;
+                padding-top: 61px;
+            }
+        }
+
+        ul li {
+            .title::after {
+                width: 73%;
+            }
+
+            .item {
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 8px 0 14px;
+
+                .order {
+                    font-size: 16px;
+                    width: 16%;
+                }
+
+                .name {
+                    width: 32%;
+                    padding-top: 3px;
+                    padding-right: 14px;
+
+                    a,
+                    span {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    a:nth-of-type(2) {
+                        font-size: 16px;
+                    }
+                }
+
+                .size {
+                    width: 8%;
+                    min-width: 26px;
+                    margin-left: 10px;
+                    padding-left: 0;
+                }
+
+                .price {
+                    font-size: 16px;
+                    width: 9%;
+                }
+
+                .btn {
+                    font-size: 18px;
+                    min-width: 200px;
+                    min-height: 40px;
+                }
+
+                .action p {
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+
+    .address {
+        width: 100%;
+        margin-top: 44px;
+        padding-top: 43px;
+
+        .form {
+            margin-bottom: 31px;
+            padding-right: 27px;
+        }
+
+        .btn {
+            font-size: 18px;
+            min-width: 234px;
+            min-height: 40px;
+            font-family: 'CartographSansCF-Bold';
+            margin-top: -4px;
+            margin-right: 8px;
+        }
+    }
+}

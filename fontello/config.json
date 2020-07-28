@@ -1,0 +1,50 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "1e9c8bfe979c092f670bd2cabde0544a",
+      "css": "delete",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M778 56H583L528 0H250L194 56H0V167H778ZM56 889C56 950 106 1000 167 1000H611C672 1000 722 950 722 889V222H56Z",
+        "width": 778
+      },
+      "search": [
+        "delete"
+      ]
+    },
+    {
+      "uid": "a4aece1b6c4b9429a4d0d9b5e38d3d87",
+      "css": "edit",
+      "code": 59394,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M984 224A55 55 0 0 0 984 146L854 16A55 55 0 0 0 776 16L674 118 882 326ZM0 792V1000H208L823 386 614 177Z",
+        "width": 1000
+      },
+      "search": [
+        "edit"
+      ]
+    },
+    {
+      "uid": "884cfc3e6e2d456dd2a2ca0dbb9e6337",
+      "css": "left-open-big",
+      "code": 59422,
+      "src": "entypo"
+    },
+    {
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "right-open-big",
+      "code": 59421,
+      "src": "entypo"
+    }
+  ]
+}

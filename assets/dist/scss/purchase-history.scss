@@ -1,0 +1,358 @@
+.section-history {
+    .back {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--Color-black);
+        padding-left: 41px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../img/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50%;
+            width: 32px;
+            height: 20px;
+            left: 0;
+            top: 4px;
+        }
+    }
+
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'CartographSansCF-Bold';
+        line-height: 35px;
+    }
+
+    ul {
+        margin-bottom: 50px;
+
+        li {
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'CartographSansCF-Medium';
+                color: rgba(0, 0, 0, 0.5);
+                display: block;
+                width: 100%;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 2px;
+                    width: 46%;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            .item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px 0;
+
+                .order {
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: 'CartographSansCF-Medium';
+                    width: 20%;
+                    padding-right: 5px;
+                }
+
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 55%;
+                    padding-right: 10px;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: 'CartographSansCF-Medium';
+                        color: var(--Color-black);
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    a:nth-of-type(2) {
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: 'CartographSansCF-Medium';
+                    }
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #cccccc;
+
+                        span {
+                            margin: 0;
+                            padding: 0;
+                            color: #000;
+                        }
+                    }
+                }
+
+                .size {
+                    width: 11%;
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: 'CartographSansCF-Medium';
+                    color: var(--Color-yellow);
+                    min-width: 35px;
+                    padding-left: 10px;
+                }
+
+                .price {
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: 'CartographSansCF-Medium';
+                    width: 24%;
+                    padding-right: 7px;
+                }
+
+                .action {
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+
+                    p {
+                        text-align: center;
+                        margin: 31px 0;
+                        min-height: 33px;
+                        min-width: 125px;
+                    }
+                }
+
+                .btn {
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    min-height: 34px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .section-history {
+        padding-top: 34px;
+
+        h4 {
+            font-size: 38px;
+            font-weight: 700;
+            font-family: 'CartographSansCF-Bold';
+            line-height: 40px;
+        }
+
+        ul {
+            li {
+                .title::after {
+                    width: 65%;
+                }
+
+                .item {
+                    align-items: baseline;
+                    flex-wrap: nowrap;
+
+                    .order {
+                        font-size: 12px;
+                        width: 12%;
+                    }
+
+                    .name {
+                        display: flex;
+                        flex-direction: column;
+                        width: 44%;
+
+                        a {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    .size {
+                        width: 8%;
+                        min-width: 36px;
+                        margin-left: 10px;
+                    }
+
+                    .price {
+                        width: 14%;
+                    }
+
+                    .action {
+                        width: auto;
+                        margin-bottom: 7px;
+                    }
+
+                    .btn {
+                        margin: 0;
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-history {
+        margin-top: 170px;
+
+        ul {
+            li {
+                .title::after {
+                    width: 75%;
+                }
+
+                .item {
+                    .order {
+                        font-size: 16px;
+                    }
+
+                    .name {
+
+                        a,
+                        span {
+                            font-size: 16px;
+                        }
+
+                        a:nth-of-type(2) {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .action p {
+                        min-width: 200px;
+                        text-align: center;
+                        margin: 31px 0;
+                        min-height: 28px;
+                    }
+
+                    .size {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    .price {
+                        font-size: 16px;
+                    }
+
+                    .btn {
+                        font-size: 18px;
+                        min-width: 200px;
+                        min-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-history {
+        h4 {
+            margin-top: 42px;
+            margin-bottom: 35px;
+        }
+
+        ul {
+            margin-bottom: 64px;
+
+            li {
+                margin-top: 10px;
+
+                .title::after {
+                    width: 83%;
+                }
+
+                .item {
+                    padding-left: 108px;
+                    padding-top: 7px;
+                    align-items: center;
+                    padding-bottom: 0;
+
+                    .order {
+                        width: 12%;
+                    }
+
+                    .name {
+                        width: 47%;
+                        padding-right: 12px;
+                        padding-left: 5px;
+                        padding-top: 5px;
+
+                        a,
+                        span {
+                            line-height: 20px;
+                        }
+
+                        span {
+                            min-width: 145px;
+                            margin-left: 20px;
+                            padding-left: 30px;
+                        }
+                    }
+
+                    .size {
+                        width: 33%;
+                        margin-left: 40px;
+                    }
+
+                    .price {
+                        width: 15%;
+                        padding-left: 3px;
+                        padding-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section-history {
+        margin-top: 190px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section-history {
+        margin-top: 210px;
+
+        ul {
+            li {
+                .item .name {
+                    width: 38%;
+
+                    .details {
+                        line-height: 14px;
+                    }
+
+                    span {
+                        min-width: 141px;
+                        margin-left: 55px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

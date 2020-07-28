@@ -1,0 +1,178 @@
+.section {
+    .heading {
+        h3 {
+            font-size: 19px;
+            font-weight: 700;
+            font-family: 'CartographSansCF-Bold';
+            line-height: 29px;
+            max-width: 1162px;
+        }
+
+        p {
+            margin-top: 20px;
+            max-width: 1224px;
+            line-height: 20px;
+            font-family: 'CartographSansCF-Medium';
+            font-size: 14px;
+        }
+    }
+
+    .contact {
+        text-align: center;
+
+        a {
+            display: block;
+            font-family: 'CartographSansCF-Medium';
+            font-size: 16px;
+            margin-bottom: 15px;
+            justify-content: center;
+            align-items: center;
+            padding: 0 22px;
+            min-width: 232px;
+            text-decoration: underline;
+        }
+
+        .btn {
+            text-decoration: none;
+            min-height: 50px;
+            margin-top: 10px;
+            display: inline-flex;
+        }
+    }
+
+    .action {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            display: inline-flex;
+            font-family: 'CartographSansCF-Medium';
+            font-size: 16px;
+            margin: 0 10px;
+            margin-bottom: 15px;
+            justify-content: center;
+            align-items: center;
+            padding: 0 22px;
+            min-width: 232px;
+            text-decoration: none;
+            min-height: 50px;
+        }
+    }
+
+
+    &-map {
+        .maps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .example,
+        .example2 {
+            width: 100%;
+            height: 180px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .map-holder {
+            max-width: 632px;
+            width: 100%;
+            position: relative;
+
+            &:nth-of-type(2) {
+                .contact {
+                    span {
+                        margin-top: 34px;
+                        display: block;
+                        margin-bottom: 21px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-map {
+        padding-bottom: 39px;
+        margin-top: 170px;
+
+        .maps {
+            justify-content: space-between;
+            padding-top: 25px;
+        }
+
+        .example,
+        .example2 {
+            width: 100%;
+            height: 180px;
+        }
+
+        .map-holder {
+            max-width: 632px;
+            width: 49%;
+
+            &:nth-of-type(1) {
+                .contact p {
+                    max-width: 237px;
+                }
+            }
+        }
+
+        .contact {
+            text-align: center;
+            padding-top: 13px;
+            max-width: 301px;
+            margin: 0 auto;
+
+            a {
+                line-height: 16px;
+            }
+
+            p {
+                margin: 13px auto 15px;
+                line-height: 20px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        .heading {
+            h3 {
+                font-size: 38px;
+                font-weight: 700;
+                font-family: 'CartographSansCF-Bold';
+                line-height: 43px;
+                max-width: 1162px;
+            }
+
+            p {
+                margin-top: 50px;
+                max-width: 1224px;
+                line-height: 20px;
+                font-family: 'CartographSansCF-Medium';
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section-map {
+        margin-top: 190px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section-map {
+        margin-top: 189px;
+    }
+}

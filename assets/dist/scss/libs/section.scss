@@ -1,0 +1,159 @@
+.section {
+	position: relative;
+	z-index: 1;
+	min-height: 380px;
+}
+
+.list {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.heading {
+	h2 {
+		text-transform: none;
+		margin-bottom: 25px;
+		margin-top: 0;
+		font-size: 33px;
+	}
+}
+
+.number {
+	display: flex;
+	align-items: center;
+
+	span.minus {
+		display: inline-flex;
+		cursor: pointer;
+		justify-content: center;
+		width: 34px;
+		height: 34px;
+		border-radius: 20px;
+		position: relative;
+		border: 2px solid var(--Color-black);
+		-webkit-transition: all 0.6s;
+		-moz-transition: all 0.6s;
+		-ms-transition: all 0.6s;
+		-o-transition: all 0.6s;
+		transition: all 0.6s;
+
+		&:hover {
+			border: 2px solid var(--Color-yellow);
+
+			&::before {
+				background-color: var(--Color-yellow);
+			}
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 2px;
+			background-color: var(--Color-black);
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+		}
+	}
+
+	input {
+		width: 66px;
+		height: 43px;
+		border-radius: 3px;
+		background-color: #ffffff;
+		text-align: center;
+		margin: 0;
+		font-size: 28px;
+		font-weight: 700;
+		border: none;
+	}
+
+	span.plus {
+		display: inline-flex;
+		cursor: pointer;
+		justify-content: center;
+		width: 34px;
+		height: 34px;
+		border-radius: 20px;
+		position: relative;
+		border: 2px solid var(--Color-black);
+		cursor: pointer;
+		-webkit-transition: all 0.6s;
+		-moz-transition: all 0.6s;
+		-ms-transition: all 0.6s;
+		-o-transition: all 0.6s;
+		transition: all 0.6s;
+
+		&:hover {
+			border: 2px solid var(--Color-yellow);
+
+			&::before,
+			&::after {
+				background: var(--Color-yellow);
+			}
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			top: 50%;
+			left: 50%;
+			width: 16px;
+			height: 2px;
+			position: absolute;
+			background: var(--Color-black);
+			transform: translate(-50%, -50%);
+		}
+
+		&::before {
+			-webkit-transform: rotate(-90deg) translate(0, -8px);
+			-moz-transform: rotate(-90deg) translate(0, -8px);
+			-ms-transform: rotate(-90deg) translate(0, -8px);
+			-o-transform: rotate(-90deg) translate(0, -8px);
+			transform: rotate(-90deg) translate(0, -8px);
+		}
+
+		&::after {
+			-webkit-transform: rotate(0deg) translate(-50%, -50%);
+			-moz-transform: rotate(0deg) translate(-50%, -50%);
+			-ms-transform: rotate(0deg) translate(-50%, -50%);
+			-o-transform: rotate(0deg) translate(-50%, -50%);
+			transform: rotate(0deg) translate(-50%, -50%);
+		}
+	}
+}
+
+
+.mCustomScrollbar>.mCustomScrollBox>.mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar>.mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover>.mCSB_scrollTools,
+.mCustomScrollBox:hover~.mCSB_scrollTools,
+.mCS-autoHide:hover>.mCustomScrollBox>.mCSB_scrollTools,
+.mCS-autoHide:hover>.mCustomScrollBox~.mCSB_scrollTools {
+	opacity: 0;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+	opacity: 0;
+}
+
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+	margin-right: 0;
+	margin-bottom: 23px;
+}
+
+.mCSB_scrollTools {
+	opacity: 0;
+	right: -6px;
+}
+
+@media screen and (min-width: 1024px) {
+	.heading {
+		h2 {
+			text-transform: uppercase;
+			margin-bottom: 37px;
+			margin-top: 0;
+		}
+	}
+}

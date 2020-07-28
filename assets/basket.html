@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css" data-inprogress="">
+    <link rel="stylesheet" href="../css/basket.css" data-inprogress="">
+
+</head>
+
+<body class="body" id="body">
+    <div class="wrapper">
+
+        <!-- build:section layout.pop_up-->
+        <!-- /build -->
+
+        <main class="main">
+            <!-- build:section layout.header_reguest-->
+            <!-- /build -->
+            <div class="container">
+
+                <section class="section section-basket">
+                    <div class="heading">
+                        <h2>Корзина </h2>
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div class="item-image" style="background-image: url(../img/img-11.jpg);"></div>
+                            <div class="item-content">
+                                <div class="item-name">
+                                    <a href="card-product.html" class="title">Маргарита</a>
+                                    <span class="description">Томатный соус / моцарелла / буффало / свежий
+                                        базилик</span>
+                                    <span class="details">Размер: 33 см</span>
+                                </div>
+                                <div class="item-right">
+                                    <div class="number">
+                                        <span class="minus"></span>
+                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1" size="1">
+                                        <span class="plus"></span>
+                                    </div>
+                                    <span class="price"> 490р.</span>
+                                    <span class="close icon-delete"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-image" style="background-image: url(../img/img-14.jpg);"></div>
+                            <div class="item-content">
+                                <div class="item-name">
+                                    <a href="card-product.html" class="title">Дабл блючиз</a>
+                                    <span class="description">Белая булка / маринованы огурцы / сыр чеддер / котлета
+                                        из говядины dry age / сырный соус / чили майонез</span>
+                                    <span class="details">Дополнительная котлета / Без лука</span>
+                                </div>
+                                <div class="item-right">
+                                    <div class="number">
+                                        <span class="minus"></span>
+                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1" size="1">
+                                        <span class="plus"></span>
+                                    </div>
+                                    <span class="price"> 370р.</span>
+                                    <span class="close icon-delete"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-action">
+                        <h2>Итого:</h2>
+                        <form class="form">
+                            <div class="form-column form-uds">
+                                <label class="release">Введите код UDS</label>
+                                <input type="text" placeholder="Код UDS">
+                                <button class="btn">Отправить</button>
+                            </div>
+                        </form>
+                        <div class="list-action-bottom">
+                            <a href="javascript:void(0);">У меня есть <span>Промо-код</span></a>
+                            <div class="total">
+                                <span>Сумма заказа:
+                                    <span>Упс! Вам не хватает 100 рублей
+                                        до минимальной суммы</span>
+                                </span>
+                                <span class="price">
+                                    <span>6250р.</span>
+                                    <span class="total-price">5850р.</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section-form">
+                    <div class="heading">
+                        <h2>Оформление заказа</h2>
+                    </div>
+                    <form class="form">
+                        <div class="form-column">
+                            <input type="text" placeholder="ФИО">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-column">
+                                <input type="text" class="telephone" placeholder="Телефон">
+                            </div>
+                            <button class="btn">
+                                Отправить код
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-column">
+                                <input type="text" placeholder="Код из СМС">
+                            </div>
+                            <button class="btn">
+                                Подтвердить
+                            </button>
+                        </div>
+                        <div class="form-column">
+                            <input type="text" placeholder=" E-mail">
+                        </div>
+                        <div class="heading">
+                            <h2>Способ доставки</h2>
+                        </div>
+                        <div class="form-group group-radio">
+                            <div class="form-column ">
+                                <input type="radio" name="radio-1">
+                                <label>Курьер</label>
+                            </div>
+                            <div class="form-column pickup">
+                                <input type="radio" name="radio-1">
+                                <label>Самовывоз</label>
+                            </div>
+                        </div>
+                        <div class="form-column add-select">
+                            <select
+                                data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}"
+                                class="jcf-hidden">
+                                <option>Выберите адрес ресторана</option>
+                                <option>Москва</option>
+                                <option>Санкт-Петербург</option>
+                            </select>
+                        </div>
+                        <div class="courier active">
+                            <div class="form-column">
+                                <input type="text" placeholder="Город">
+                            </div>
+                            <div class="form-column">
+                                <input type="text" placeholder="Улица">
+                            </div>
+                            <div class="form-group delivery">
+                                <div class="form-column">
+                                    <input type="text" placeholder="Дом">
+                                </div>
+                                <div class="form-column">
+                                    <input type="text" placeholder="Строение / корпус">
+                                </div>
+                            </div>
+                            <div class="form-group delivery">
+                                <div class="form-column">
+                                    <input type="text" placeholder="Этаж">
+                                </div>
+                                <div class="form-column">
+                                    <input type="text" placeholder="Домофон">
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <input type="text" placeholder="Квартира / офис">
+                            </div>
+                            <span class="warning">Упс! Ваш адрес не входит в зону доставки =(</span>
+                            <div class="form-group group-radio">
+                                <span class="title">Когда привезти:</span>
+                                <div class="form-column ">
+                                    <input type="radio" name="radio-01">
+                                    <label>Как можно скорее</label>
+                                </div>
+                                <div class="form-column time">
+                                    <input type="radio" name="radio-01">
+                                    <label>К нужному времени: <span class="details-time">Сегодня 14:15</span></label>
+                                    <div class="pick-time">
+                                        <div class="holder">
+                                            <div class="date-slider" id="slider-1">
+                                                <div id="prevBtn">
+                                                    <span class="icon-left-open-big" aria-hidden="true"></span>
+                                                </div>
+                                                <div class="date-slide date-active">
+                                                    Сегодня
+                                                </div>
+                                                <div class="date-slide">
+                                                    завтра
+                                                </div>
+                                                <div class="date-slide">
+                                                    14.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    15.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    16.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    17.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    18.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    19.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    20.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    21.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    22.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    23.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    24.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    25.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    26.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    27.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    28.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    29.03.2020
+                                                </div>
+                                                <div class="date-slide">
+                                                    30.03.2020
+                                                </div>
+                                                <div id="nextBtn">
+                                                    <span class="icon-right-open-big" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="holder2">
+                                            <div class="date-slider2" id="slider-2">
+                                                <div id="prevBtn2">
+                                                    <span class="icon-left-open-big" aria-hidden="true"></span>
+                                                </div>
+                                                <div class="date-slide2 date-active">
+                                                    14
+                                                </div>
+                                                <div class="date-slide2">
+                                                    15
+                                                </div>
+                                                <div class="date-slide2">
+                                                    16
+                                                </div>
+                                                <div id="nextBtn2">
+                                                    <span class="icon-right-open-big" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="delimiter">:</span>
+                                        <div class="holder3">
+                                            <div class="date-slider3" id="slider-3">
+                                                <div id="prevBtn3">
+                                                    <span class="icon-left-open-big" aria-hidden="true"></span>
+                                                </div>
+                                                <div class="date-slide3 date-active">
+                                                    15
+                                                </div>
+                                                <div class="date-slide3">
+                                                    16
+                                                </div>
+                                                <div class="date-slide3">
+                                                    17
+                                                </div>
+                                                <div class="date-slide3">
+                                                    18
+                                                </div>
+                                                <div id="nextBtn3">
+                                                    <span class="icon-right-open-big" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-column ">
+                                <input type="checkbox" name="checkbox-01">
+                                <label class="label tooltip" for="checkbox-01">Тихий курьер
+                                    <span class="content-tooltip">
+                                        Курьер не звонит в дверь,
+                                        а звонит на мобильный
+                                        телефон.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-column ">
+                            <textarea placeholder="Комментарий к заказу"></textarea>
+                        </div>
+                        <div class="heading">
+                            <h2>Выберите способ оплаты</h2>
+                        </div>
+                        <div class="form-group group-radio">
+                            <div class="form-column ">
+                                <input type="radio" name="radio-2">
+                                <label>Картой на сайте</label>
+                            </div>
+                            <div class="form-column ">
+                                <input type="radio" name="radio-2">
+                                <label>Наличными курьеру</label>
+                            </div>
+                            <div class="form-column ">
+                                <input type="radio" name="radio-2">
+                                <label>Картой курьеру</label>
+                            </div>
+                        </div>
+                        <div class="form-column change">
+                            <span>Нужна сдача с:</span>
+                            <input type="text" placeholder="Укажите сумму">
+                            <span>руб.</span>
+                        </div>
+                        <div class="action">
+                            <a href="home.html">Вернуться в меню</a>
+                            <button class="btn">Заказать </button>
+                        </div>
+                    </form>
+
+                </section>
+
+                <!-- build:section layout.footer-->
+                <!-- /build -->
+
+            </div>
+
+        </main>
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/inputmask.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script src="../js/basket.min.js"></script>
+
+</html>

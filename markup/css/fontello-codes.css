@@ -1,0 +1,5 @@
+
+.icon-delete:before { content: '\e801'; } /* '' */
+.icon-edit:before { content: '\e802'; } /* '' */
+.icon-right-open-big:before { content: '\e81d'; } /* '' */
+.icon-left-open-big:before { content: '\e81e'; } /* '' */

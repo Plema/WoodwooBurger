@@ -1,0 +1,36 @@
+.btn,
+.btn-inverse {
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  z-index: 1;
+  position: relative;
+  color: var(--Color-black);
+  background-color: inherit;
+  min-width: 108px;
+  min-height: 40px;
+  border-radius: 0px;
+  border: 2px solid var(--Color-black);
+
+  &:hover {
+    background-color: var(--Color-black);
+    color: #fff;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
